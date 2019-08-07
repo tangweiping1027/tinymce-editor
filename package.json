@@ -2,7 +2,6 @@
   "name": "tinymce-editor",
   "description": "A vue tinymce-editor plugn",
   "version": "1.0.0",
-  "main": "dist/index.js",
   "author": "tangweiping1027 <496179177@qq.com>",
   "license": "MIT",
   "private": true,
@@ -12,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/icebluesky2666/weibo-emoji"
+    "url": "https://github.com/tangweiping1027/tinymce-editor.git"
   },
   "dependencies": {
     "vue": "^2.5.11",

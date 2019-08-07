@@ -2,15 +2,11 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './lib/index.js',
-  // entry: './src/main.js',
+  entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'index.js', //打包生成文件的名字
-    library: 'tinymceEditor', //umd 打包的时候模块的名字
-    libraryTarget: 'umd', //打包方式 amd
-    umdNamedDefine: true //打包未定义的时候使用默认名字
+    filename: 'build.js'
   },
   module: {
     rules: [{
