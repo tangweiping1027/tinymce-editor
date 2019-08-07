@@ -19,6 +19,8 @@ npm run build
 
 npm install tinymce-editor -D
 
+vue 项目中 main.js 引入
+
 ```js
 import tinymceEditor from 'tinymce-editor'
 Vue.use(tinymceEditor)
