@@ -59,6 +59,4 @@ export default {
 
 项目根目录下创建 public
 
-然后加入 tinmce 静态文件
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+然后加入 tinymce 静态文件
