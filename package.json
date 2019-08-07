@@ -1,10 +1,11 @@
 {
   "name": "tinymce-editor",
   "description": "A vue tinymce-editor plugn",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "author": "tangweiping1027 <496179177@qq.com>",
+  "main": "dist/index.js",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"

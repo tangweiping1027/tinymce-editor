@@ -4,8 +4,6 @@
       v-model="myValue"
       :init="init"
       :disabled="disabled"
-      @onClick="onClick"
-      @onSelectionChange="handlerFunction"
       v-on="$listeners"
       v-bind="$attrs"
     ></tinymceVue>
@@ -89,7 +87,6 @@ import "tinymce/plugins/tabfocus";
 import "tinymce/plugins/textpattern";
 import "tinymce/plugins/visualblocks";
 import "tinymce/plugins/visualchars";
-import "tinymce/plugins/wordcount";
 export default {
   name: "tinymce-editor",
   components: {
@@ -179,9 +176,9 @@ export default {
       //初始化配置
       init: {
         ...this.inits,
-        language_url: "../../public/static/tinymce/langs/zh_CN.js",
         language: "zh_CN",
-        skin_url: "../../public/static/tinymce/skins/ui/oxide",
+        language_url: "/public/tinymce/langs/zh_CN.js",
+        skin_url: "/public/tinymce/skins/ui/oxide",
         browser_spellcheck: this.browserSpellcheck, // 拼写检查
         branding: this.branding, // 去水印
         elementpath: this.elementpath, //禁用编辑器底部的状态栏
@@ -207,10 +204,7 @@ export default {
           { text: "C++", value: "cpp" }
         ],
         autoresize_bottom_margin: this.autoresizeBottomMargin,
-        content_css: [
-          "../../public/static/tinymce/skins/ui/codepen/font-face.css?family=Lato:300,300i,400,400i",
-          "../../public/static/tinymce/skins/ui/codepen/codepen.min.css"
-        ],
+        content_css: [],
         charmap: [
           [160, "no-break space"],
           [173, "soft hyphen"],
@@ -245,7 +239,7 @@ export default {
     clear() {
       this.myValue = "";
     },
-    handlerFunction(val) {
+    handlerFunction() {
       console.log(val);
     }
   },

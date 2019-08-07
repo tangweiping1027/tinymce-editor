@@ -1,4 +1,4 @@
-import TinymceEditor from './src/index'
+import TinymceEditor from './index.vue'
 const Editor = {
   install(Vue, options) {
     Vue.component(TinymceEditor.name, TinymceEditor);
